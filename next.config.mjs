@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["localhost:3000", "next-image.idlengineer.uz"],
+    },
+  },
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
